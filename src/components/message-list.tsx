@@ -34,13 +34,13 @@ export const MessageList = () => {
         last: 100
         }
     })
-
+  
     useEffect(() => {
         if (inView) {
           entry?.target?.scrollIntoView({ behavior: 'auto' })
         }
       }, [data, entry, inView])
-
+console.log("🚀 ~ file: message-list.tsx:31 ~ MessageList ~ data:", data)
   if (loading)
     return (
       <div className="h-full flex items-center justify-center">
